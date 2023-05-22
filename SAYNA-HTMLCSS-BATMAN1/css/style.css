@@ -1,0 +1,391 @@
+
+/*  introducing the font proposed in the subject of the project */
+
+@font-face {
+  font-family: 'rajdhani';
+  src: url(../fonts/Rajdhani-Medium.ttf);
+  font-family: 'space grotesk';
+  src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+/*  initialize the color used in the projec t batman */
+:root{
+  --yellow-color:#FFFF00;
+  --yellow-light:#f8f184;
+  --blue-color:#18587d;
+  --white-color:#fff;
+  --gredient-white: #eddebf75;
+  --gredient-red: #89000977;
+  --black-color:#000;
+  --blueforcontact:#c4C4C4;
+  --bordercolor:#BCBBBD;
+
+
+}
+/*  initialize the margin and padding of the site batman */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-family: 'rajdhani';
+  font-size: 36px;
+  font-weight: 500;
+}
+/*  style the box headear */
+
+header{
+  width: 100%;
+ 
+  display: flex;align-items: center; /*  align-items: align menu and logo(sur la meme ligne) */
+  justify-content: space-between;
+  padding: 5% ;
+  border: 1px solid var(--bordercolor);
+}
+/*  remove the dot in front of the menu HOME  */
+header ul{
+  list-style: none;
+}
+/*  change the color of the link in white  */
+
+header ul a{
+  color: white;
+}
+/*  modify/reduce the size of the logo home  */
+
+header .imglogohome a img{
+  width: 80px;
+}
+
+/*  styling the body of the site, introducing the police and 
+its size, the white color and the black background  */
+
+body{
+  
+border: 1px solid var(--bordercolor);
+
+margin: 3% 7%;
+  background-color: black;color: white;
+  font-family:'space grotesk';font-weight: 300;
+
+  background:url('/illustration/Bathome1.png') ;
+  background-repeat: no-repeat; 
+  background-size: contain;background-color: #000;
+
+
+  /*  insertion of the image background (red batmanand) in the first section
+   of the page and styling it  */
+}
+.batman1{
+  
+  
+  
+  background-repeat: no-repeat; 
+  
+  background-position: 80% 20%; /*  when we reduce the size of the batman pic, 
+                                          the focus stay on batman  */
+  
+  
+}
+
+/*  setting the content of the first section */
+
+/*  conteneur setting in the display  flex so it can be easy
+to manipulate */
+
+/*  almost  dimension parameters like width and margin
+are in purcentage so it will be responsive*/
+.content{
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+.content h2{
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.conteneurbutton{
+  display: flex;
+  margin-left: 20%;
+  width: 80%  
+  ;gap: 2rem;
+  margin-top: -10%;
+  
+}
+
+.conteneurbutton a{
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 15px;opacity: 40%;
+  
+  background: linear-gradient(80deg,var(--gredient-white),var(--gredient-red) );
+  box-shadow: var(--black-color) 6px 6px 100px;
+  
+  padding:2% 5% 2% 5%  ;
+  
+}
+.conteneurbutton a:hover{
+  opacity: 100%;transition: 0.5s;
+}
+
+
+
+
+.flechesep{ margin-top: 10%;
+  margin-left: 5%;
+
+}
+
+.text{
+  background-color: 
+  display: flex;align-items: center;
+}
+
+.conteneur{
+  display: flex;gap: 1rem; margin-left: 50px;
+  justify-content: center; /*  gap:1rem create space between pictures  */
+}
+
+
+
+.conteneur img {      /*  reduce the size of 3 pictures in each conteneur  */
+  width: 80%; margin-left: 25px
+}
+  
+/* setting the scroll in the right */
+.scroll{
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+  position: fixed; right: 3.5%;} /*  putting images fix so it will be always
+  there when we scroll it */
+
+  .scroll img{
+    padding-top: 15%;
+  }
+  
+
+  .description{
+    margin: 5% 10% 5% 10%;
+    text-align: justify;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  h1{
+    margin: 5% 10% ;
+  }
+  
+  h2{
+    margin: 05% 10% ;
+  }
+    
+
+
+button{
+  font-family:'rajdhani';
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.infopersonnage{
+  text-align: center;
+}
+.deco{
+  display: flex;margin-left: 140px;
+}
+
+.deco img{
+   width: 115px;
+  position: absolute;  /*  putting the position absolute so the image deco
+  in front of everything so we can move it everywhere in the page */
+
+}
+
+
+deco2 {
+  
+   margin-left: ;
+}
+
+.deco2 img{ width: 20%;position: absolute;right:0%;;
+
+}
+
+  
+ 
+.image1section5 img{
+  width: 115%;margin-left: -7%;
+}
+
+.image2section6 img{width: 80%;}
+
+/*  styling the position of bande annonce page  */
+
+.conteneur2{
+  display: flex;
+  width: 100%;
+  margin: 0 0 0 0;
+  align-items: center;
+  justify-content: center;
+  } /*  center the conteneur to the middle of the page  */
+  
+
+.action{  margin: 0  0; font-size: 15px;}
+
+
+.textcontent{ background: linear-gradient(80deg, #4a4a40,#081D2A );
+  ;height:250px ;padding-bottom:20px ;
+
+  
+ }
+
+.textcontent p{font-size: 10px; ;}
+
+.textcontent h2{
+  padding-top: 60px; padding-bottom: 10px; margin: 0;
+}
+
+.textcontent h3{
+  padding: 0;margin: 0;
+}
+
+.yellow{ color: var(--yellow-color);}
+
+.conteneur2 button{  background: none;
+   border: none; margin-right: 10%;margin-left: 10%}
+
+
+.bande-annonce img{ width: 80%; margin-left: 70px; }
+
+
+/*  design of section contact   */
+
+.contact{
+  background: linear-gradient(80deg, #4a4a40,#081D2A );  width: 116%;margin-left: -8%;
+}
+
+.form{
+  display: block;margin-left: 20%;
+}
+
+.contact h2{
+  text-align: center;font-size: 32px;margin-top:5%;padding-top: 2%;padding-right: 15%
+}
+
+.title{
+  display: block;
+}
+
+#email, #msg{
+  background-color: transparent;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom-color: white;
+    width: 80%;
+    height: 35px;
+}
+.conteneurmsg{
+  display: flex;flex-direction: column;gap: 2rem;margin-top: 5%;
+}
+
+.confirmer input{
+  background: linear-gradient(80deg, #eddebf57,#890009a9 );
+   padding: 1% 5% ;margin-left: 30%;margin-bottom: 5%;
+   cursor: pointer;
+}
+
+
+.bouttongroup{
+  display: flex;flex-direction: row;gap: 2rem;
+
+}
+
+.bouttongroup input{
+  opacity: 0;
+}
+
+.bouttongroup label{
+cursor: pointer;border-bottom: 1px solid gray;
+border-top: 1px solid gray;
+border-left: 1px solid gray;
+border-right: 1px solid rgb(10, 38, 114);
+padding: 1% 2%  ;
+}
+.conteneurnews{
+  display: flex;flex-direction: column;gap: 2rem;width: 94%;
+}
+
+#flecherecep{ transform: rotate(90deg); width: 2%;
+
+}
+
+.choixrecepfreqnews, { border-bottom: 1px solid white;
+   padding-bottom: 10px; margin: 2% 0;;
+  }
+
+  .choixtypenews{ border-bottom: 1px solid white;
+    padding-bottom: 10px; margin: 2% 0;width: 95%;
+   }
+
+   #msg{border-bottom: 1px solid white;width: 95%;
+
+   }
+
+   /*  sitting animation on pictures actors  */
+
+   .photo:hover{
+    transform: scale(110%);
+  }
+    
+  .photo{
+    transition: 0.5s ;
+  }
+   
+/*  design of the section citation   */
+
+.conteneurcitation{ display: flex;flex-direction: column;gap: 1rem;}
+
+.guillemetgauche{
+  margin: 0 0;
+}
+
+.guillemetgauche img{
+  width: 5%;margin:  10% 0 0% 10%;
+}
+
+.citation{
+  font-size: 15px;text-align: center;
+}
+
+.auteurcitation{
+  font-size: 10px;text-align: center;
+}
+
+.guillemetdroite img{
+  width: 5%;margin:  0% 0% 0% 85%;
+}
+
+.conteneurwarnerbrossrespect{
+  display: flex;flex-direction: row;margin-left: 5%;margin-top: 5%;
+}
+
+/*  stylying the footer page */
+.conteneurfooter{
+  display: flex;flex-direction: row;gap: 1rem;align-items: center;margin-left: 35%;margin-top: 5%;margin-bottom: 5%;
+}
+
+
+
+
+
